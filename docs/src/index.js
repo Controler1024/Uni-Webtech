@@ -1,8 +1,7 @@
 document.getElementById("app").innerHTML = `
-<h1>Hallo Marcus!</h1>
+<h1>Hallo Mankind!</h1>
 <div>
-  Wie geht es dir?<br>mir egal
-  <br><br>We use Parcel to bundle this sandbox, you can find more info about Parcel
-  <a href="https://parceljs.org" target="_blank" rel="noopener noreferrer">here</a>.
+  We used to be humans, but since we 'work' for Deutsche Telekom, we have died inside.
+  <br>You can find more about our diseases <a href="https://www.amazon.de/gp/product/383481427X/ref=dbs_a_def_rwt_hsch_vapi_taft_p1_i2" target="_blank" rel="noopener noreferrer">here</a>.
 </div>
 `;
