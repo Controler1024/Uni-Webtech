@@ -1,6 +1,19 @@
+.header a {
+  background-color: rgb(124, 212, 228);
+  border-color: black;
+  border-style: solid;
+
+  /* float: right; */
+}
+.header a:hover {
+  background-color: #ddd;
+}
+.header a.active {
+  background-color: dodgerblue;
+}
 body {
   font-family: Arial, Helvetica, sans-serif;
 }
-h1{
-  color:magenta
+h1 {
+  color: magenta;
 }
