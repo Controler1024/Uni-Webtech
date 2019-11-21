@@ -2,7 +2,8 @@
   background-color: rgb(228, 251, 255);
   border-color: lightgray;
   border-style: groove;
-  border-width: 01px;
+  border-width: 0.1em;
+  font-size: 1em;
 
   /* float: right; */
 }
