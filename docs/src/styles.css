@@ -1,7 +1,7 @@
 .header a {
-  background-color: rgb(194, 239, 247);
+  background-color: rgb(228, 251, 255);
   border-color: lightgray;
-  border-style: outsetge;
+  border-style: groove;
   border-width: 01px;
 
   /* float: right; */
@@ -44,4 +44,6 @@ body {
 }
 h1 {
   color: magenta;
+}
+meta {
 }
