@@ -12,6 +12,8 @@
       <a href="movies.html">Movies</a>
       <a class="active" href="games.html">Bällebad</a>
       <a href="about.html">Impressum</a>
+      <script src="src/rps.js"></script>
+      <script src="src/test.js"></script>
     </div>
 
     <br />
@@ -24,13 +26,13 @@
 
       <tr>
         <td>
-          <input type="button" onclick="test.apply()" value="Test"/>Schere</button>
+          <input type="button" onclick="getanswer('Hallo Penis')" value="Test"/>Schere</button>
         </td>
       </tr>
 
       <tr>
         <td>
-          <button type="button" onclick="test('penis')">Stein</button>
+          <button type="button" onclick="test_button('Pimmel')">Stein</button>
         </td>
       </tr>
 
@@ -42,12 +44,7 @@
     </table>
 
     Ergennis:
-    <script src="src/test.js"></script>
+    
   </body>
-  <script>
-    function test(message) {
-      antwort = message + "!";
-      alert(antwort);
-    }
   </script>
 </html>
