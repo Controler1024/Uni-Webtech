@@ -42,8 +42,9 @@
 }
 body {
   font-family: Arial, Helvetica, sans-serif;
+  background-color: rgb(180, 255, 180);
 }
 h1 {
   color: magenta;
 }
-/*background-image: url("https://images-na.ssl-images-amazon.com/images/I/51xBjve1-TL._US230_.jpg");
+/**background-image: url("https://images-na.ssl-images-amazon.com/images/I/51xBjve1-TL._US230_.jpg");
