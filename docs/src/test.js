@@ -1,1 +1,3 @@
-alert("do not anger me!");
+function test_button() {
+  alert("do not anger me!");
+}
