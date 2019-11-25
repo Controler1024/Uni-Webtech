@@ -1,4 +1,4 @@
-document.getElementsByName("rps").innerHTML = `
+document.getElementById("rps").innerHTML = `
 <table border="1" cellpadding="5">
       <th>
         Spieler 1
@@ -9,7 +9,7 @@ document.getElementsByName("rps").innerHTML = `
 
       <tr>
         <td>
-          <button type="button" class="rps">
+          <button type="button">
             Schere
           </button>
         </td>
