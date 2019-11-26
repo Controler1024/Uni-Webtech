@@ -14,6 +14,7 @@ let yFruit = 0;
 let scoreElem;
 
 let start_frames = 15;
+var prev_mainscore = 0;
 
 function setup() {
   scoreElem = createDiv("Score = 0");
@@ -41,8 +42,10 @@ function draw() {
   updateSnakeCoordinates();
   checkGameStatus();
   checkForFruit();
-  var mainscore = parseInt(scoreElem.html().substring(8));
-  if (10 < mainscore < 20 && start_frames < 20) {
+  if (
+    prev_mainscore !== parseInt(scoreElem.html().substring(8)) &&
+    start_frames < 30
+  ) {
     start_frames += 1;
     frameRate(start_frames);
   }
