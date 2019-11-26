@@ -13,6 +13,8 @@ let xFruit = 0;
 let yFruit = 0;
 let scoreElem;
 
+start_frames = 15;
+
 function setup() {
   scoreElem = createDiv("Score = 0");
   scoreElem.position(130, 590);
@@ -20,7 +22,7 @@ function setup() {
   scoreElem.style("color", "black");
 
   createCanvas(500, 500);
-  frameRate(15);
+  frameRate(startframes);
   stroke(255);
   strokeWeight(10);
   updateFruitCoordinates();
@@ -40,8 +42,9 @@ function draw() {
   checkGameStatus();
   checkForFruit();
   mainscore = parseInt(scoreElem.html().substring(8));
-  if (mainscore > 10) {
-    frameRate(60);
+  if (mainscore % 10) {
+    startframes += 5;
+    frameRate(startframes);
   }
 }
 
