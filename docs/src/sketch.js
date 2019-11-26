@@ -43,7 +43,8 @@ function draw() {
   checkGameStatus();
   checkForFruit();
   var current_score = parseInt(scoreElem.html().substring(8));
-  if (prev_mainscore !== current_score && start_frames < 30) {
+  var score_diff = current_score - prev_mainscore;
+  if ((score_diff = 2 && start_frames < 30)) {
     start_frames += 1;
     frameRate(start_frames);
     prev_mainscore = current_score;
