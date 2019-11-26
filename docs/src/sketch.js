@@ -19,7 +19,7 @@ function setup() {
   scoreElem.id = "score";
   scoreElem.style("color", "black");
 
-  createCanvas(600, 600);
+  createCanvas(500, 500);
   frameRate(15);
   stroke(255);
   strokeWeight(10);
