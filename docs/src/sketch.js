@@ -43,6 +43,7 @@ function draw() {
   checkForFruit();
   var mainscore = parseInt(scoreElem.html().substring(8));
   if (10 < mainscore < 20 && start_frames !== 30) {
+
     start_frames += 1;
     frameRate(start_frames);
   }
