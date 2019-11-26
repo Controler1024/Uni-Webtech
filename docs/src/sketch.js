@@ -15,11 +15,11 @@ let scoreElem;
 
 function setup() {
   scoreElem = createDiv("Score = 0");
-  scoreElem.position(200, 200);
+  scoreElem.position(130, 570);
   scoreElem.id = "score";
   scoreElem.style("color", "black");
 
-  createCanvas(500, 500);
+  createCanvas(600, 600);
   frameRate(15);
   stroke(255);
   strokeWeight(10);
