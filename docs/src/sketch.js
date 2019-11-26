@@ -20,7 +20,7 @@ function setup() {
   scoreElem.style("color", "black");
 
   createCanvas(500, 500);
-  frameRate(60);
+  frameRate(15);
   stroke(255);
   strokeWeight(10);
   updateFruitCoordinates();
@@ -91,6 +91,9 @@ function checkGameStatus() {
     checkSnakeCollision()
   ) {
     noLoop();
+    if (frames > 50) {
+      frameRate(25);
+    }
     const scoreVal = parseInt(scoreElem.html().substring(8));
     scoreElem.html("Game ended! Your score was : " + scoreVal);
   }
