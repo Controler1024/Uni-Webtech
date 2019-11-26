@@ -91,7 +91,7 @@ function checkGameStatus() {
     checkSnakeCollision()
   ) {
     noLoop();
-    if (frames > 50) {
+    if (frames > 10) {
       frameRate(25);
     }
     const scoreVal = parseInt(scoreElem.html().substring(8));
