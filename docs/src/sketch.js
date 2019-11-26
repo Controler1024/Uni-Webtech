@@ -13,7 +13,7 @@ let xFruit = 0;
 let yFruit = 0;
 let scoreElem;
 
-var start_frames = 15;
+let start_frames = 15;
 
 function setup() {
   scoreElem = createDiv("Score = 0");
