@@ -22,7 +22,7 @@ function setup() {
   scoreElem.style("color", "black");
 
   createCanvas(500, 500);
-  frameRate(startframes);
+  frameRate(start_frames);
   stroke(255);
   strokeWeight(10);
   updateFruitCoordinates();
@@ -43,8 +43,8 @@ function draw() {
   checkForFruit();
   mainscore = parseInt(scoreElem.html().substring(8));
   if (mainscore % 10) {
-    startframes += 5;
-    frameRate(startframes);
+    start_frames += 5;
+    frameRate(start_frames);
   }
 }
 
