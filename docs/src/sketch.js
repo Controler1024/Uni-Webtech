@@ -140,12 +140,12 @@ function updateFruitCoordinates() {
 
 function keyPressed() {
   switch (keyCode) {
-    case 68:
+    case 65:
       if (direction !== "right") {
         direction = "left";
       }
       break;
-    case 65:
+    case 68:
       if (direction !== "left") {
         direction = "right";
       }
