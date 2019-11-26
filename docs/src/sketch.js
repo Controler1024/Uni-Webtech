@@ -15,9 +15,9 @@ let scoreElem;
 
 function setup() {
   scoreElem = createDiv("Score = 0");
-  scoreElem.position(20, 20);
+  scoreElem.position(200, 200);
   scoreElem.id = "score";
-  scoreElem.style("color", "white");
+  scoreElem.style("color", "black");
 
   createCanvas(500, 500);
   frameRate(15);
