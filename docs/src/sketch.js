@@ -20,7 +20,7 @@ function setup() {
   scoreElem.style("color", "black");
 
   createCanvas(500, 500);
-  frameRate(15);
+  frameRate(30);
   stroke(255);
   strokeWeight(10);
   updateFruitCoordinates();
