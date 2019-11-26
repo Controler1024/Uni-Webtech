@@ -92,7 +92,7 @@ function checkGameStatus() {
   ) {
     noLoop();
     if (frames > 10) {
-      frameRate(25);
+      frameRate(60);
     }
     const scoreVal = parseInt(scoreElem.html().substring(8));
     scoreElem.html("Game ended! Your score was : " + scoreVal);
