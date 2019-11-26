@@ -42,12 +42,11 @@ function draw() {
   updateSnakeCoordinates();
   checkGameStatus();
   checkForFruit();
-  if (
-    prev_mainscore !== parseInt(scoreElem.html().substring(8)) &&
-    start_frames < 30
-  ) {
+  var current_score = parseInt(scoreElem.html().substring(8));
+  if (prev_mainscore !== current_score && start_frames < 30) {
     start_frames += 1;
     frameRate(start_frames);
+    prev_mainscore = current_score;
   }
 }
 
