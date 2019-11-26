@@ -145,17 +145,17 @@ function keyPressed() {
         direction = "left";
       }
       break;
-    case 76:
+    case 68:
       if (direction !== "left") {
         direction = "right";
       }
       break;
-    case 73:
+    case 83:
       if (direction !== "down") {
         direction = "up";
       }
       break;
-    case 75:
+    case 87:
       if (direction !== "up") {
         direction = "down";
       }
