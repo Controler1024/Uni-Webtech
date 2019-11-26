@@ -13,8 +13,6 @@ let xFruit = 0;
 let yFruit = 0;
 let scoreElem;
 
-var mainscore;
-
 function setup() {
   scoreElem = createDiv("Score = 0");
   scoreElem.position(130, 590);
@@ -41,6 +39,10 @@ function draw() {
   updateSnakeCoordinates();
   checkGameStatus();
   checkForFruit();
+  mainscore = parseInt(scoreElem.html().substring(8));
+  if (mainscore > 10) {
+    frameRate(60);
+  }
 }
 
 /*
@@ -95,9 +97,6 @@ function checkGameStatus() {
     noLoop();
     const scoreVal = parseInt(scoreElem.html().substring(8));
     scoreElem.html("Game ended! Your score was : " + scoreVal);
-    if (scoreVal > 10) {
-      frameRate(60);
-    }
   }
 }
 
