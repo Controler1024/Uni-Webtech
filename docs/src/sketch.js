@@ -15,7 +15,7 @@ let scoreElem;
 
 function setup() {
   scoreElem = createDiv("Score = 0");
-  scoreElem.position(130, 570);
+  scoreElem.position(130, 590);
   scoreElem.id = "score";
   scoreElem.style("color", "black");
 
