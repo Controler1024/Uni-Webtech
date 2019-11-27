@@ -12,7 +12,7 @@ let slider;
 
 function setup() {
   createCanvas(600, 400);
-  slider = createSlider(1, 20, 5);
+  slider = createSlider(1, 25, 5);
   slidernumber = createDiv("Score = 0");
   slidernumber.position(130, 500);
   slidernumber.id = "score";
