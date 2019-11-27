@@ -22,7 +22,7 @@ function setup() {
 function draw() {
   background(0);
   translate(150, 200);
-  scoreElem.html("Slidercount = " + slider.value())
+  slidernumber.html("Slidercount = " + slider.value())
   let x = 0;
   let y = 0;
 
