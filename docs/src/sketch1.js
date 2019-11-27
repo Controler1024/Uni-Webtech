@@ -6,18 +6,23 @@
 
 let time = 0;
 let wave = [];
+let slidernumber;
 
 let slider;
 
 function setup() {
   createCanvas(600, 400);
   slider = createSlider(1, 10, 5);
+  slidernumber = createDiv("Score = 0");
+  slidernumber.position(130, 590);
+  slidernumber.id = "score";
+  slidernumber.style("color", "black");
 }
 
 function draw() {
   background(0);
   translate(150, 200);
-
+  scoreElem.html("Slidercount = " + slider.value())
   let x = 0;
   let y = 0;
 
