@@ -23,7 +23,7 @@ function setup() {
   scoreElem.id = "score";
   scoreElem.style("color", "black");
 
-  frameElem = createDiv("Frames = " + start_frames);
+  frameElem = createDiv("Level = " + start_frames - 14);
   frameElem.position(130, 670);
   frameElem.id = "frame";
   frameElem.style("color", "black");
@@ -58,7 +58,7 @@ function speedup() {
     prev_mainscore = current_score;
     start_frames = start_frames + 1;
     frameRate(start_frames);
-    frameElem.html("Frames = " + start_frames);
+    frameElem.html("Level = " + start_frames - 14);
   }
 }
 /*
