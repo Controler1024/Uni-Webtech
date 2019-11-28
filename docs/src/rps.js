@@ -4,7 +4,7 @@ function getanswer(decision) {
   
   var number = Math.round(Math.random()*2).toString(); // generates a random number between 0 and 2 (for 3 cases: rock, paper, scissor)
   
-  if(decision = number)
+  if(decision == number)
   {
     alert("draw " + decision + " " + number);
   }
