@@ -1,8 +1,4 @@
 document.getElementById("rps");
-ergebnis_text = createDiv("Ergebnis: ");
-ergebnis_text.position(620, 380);
-ergebnis_text.id = "score";
-ergebnis_text.style("color", "black");
 
 function getanswer(decision) {
   var ergebnis = "Ergebnis: "
@@ -40,5 +36,5 @@ function getanswer(decision) {
       ergebis += "You lost!\nYou choosed: " + options[decision] + "\nOpponent choosed: " + options[number];
     }
   }
-ergebnis_text.html(ergenis)
+document.getElementById("ergebnis").innerHTML = ergebnis;
 }
