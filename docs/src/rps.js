@@ -23,7 +23,7 @@ function getanswer(decision) {
       }
       else
       {
-        alert("You won!\nYou choosed: " + options[decision-1]" +\nOpponent choosed: " + options[number-1]);
+        alert("You won!\nYou choosed: " + options[decision-1] + "\nOpponent choosed: " + options[number-1]);
       }
     }
     else if(number < decision)
