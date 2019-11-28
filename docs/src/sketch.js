@@ -18,7 +18,7 @@ var prev_mainscore = 0;
 
 function setup() {
   scoreElem = createDiv("Score = 0");
-  scoreElem.position(130, 660);
+  scoreElem.position(130, 650);
   scoreElem.id = "score";
   scoreElem.style("color", "black");
 
@@ -42,15 +42,17 @@ function draw() {
   updateSnakeCoordinates();
   checkGameStatus();
   checkForFruit();
+  speedup();
+}
+
+function speedup(){
   var current_score = parseInt(scoreElem.html().substring(8));
   var score_diff = current_score - prev_mainscore;
   if (score_diff === 2 && start_frames < 30) {
     start_frames += 1;
     frameRate(start_frames);
     prev_mainscore = current_score;
-  }
 }
-
 /*
  The segments are updated based on the direction of the snake.
  All segments from 0 to n-1 are just copied over to 1 till n, i.e. segment 0
