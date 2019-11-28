@@ -7,7 +7,7 @@ function getanswer(decision) {
   var options = ["Schere", "Stein", "Papier"]
   if(decision == number)
   {
-    ergebnis += "Draw\nYou choosed: " + options[decision] + "\nOpponent choosed: " + options[number];
+    ergebnis += "Draw<br>You choosed: " + options[decision] + "<br>Opponent choosed: " + options[number];
   }
   else if (decision != number)
   {
@@ -20,20 +20,20 @@ function getanswer(decision) {
     {
       if(number == 1)
       {
-        ergebnis += "You lost!\nYou choosed: " + options[decision] + "\nOpponent choosed: " + options[number];
+        ergebnis += "You lost!<br>You choosed: " + options[decision] + "<br>Opponent choosed: " + options[number];
       }
       else
       {
-        ergebnis += "You won!\nYou choosed: " + options[decision] + "\nOpponent choosed: " + options[number-1];
+        ergebnis += "You won!<br>You choosed: " + options[decision] + "<br>Opponent choosed: " + options[number-1];
       }
     }
     else if(number < decision)
     {
-      ergebnis += "You won!\nYou choosed: " + options[decision] + "\nOpponent choosed: " + options[number];
+      ergebnis += "You won!<br>You choosed: " + options[decision] + "<br>Opponent choosed: " + options[number];
     }
     else
     {
-      ergebnis += "You lost!\nYou choosed: " + options[decision] + "\nOpponent choosed: " + options[number];
+      ergebnis += "You lost!<br>You choosed: " + options[decision] + "<br>Opponent choosed: " + options[number];
     }
   }
 document.getElementById("ergebnis").innerHTML = ergebnis;
