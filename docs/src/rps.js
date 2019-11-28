@@ -1,12 +1,12 @@
 document.getElementById("rps");
 
 function getanswer(decision) {
-  
+  decision = decision - 1;
   var number = Math.round(Math.random()*2).toString(); // generates a random number between 0 and 2 (for 3 cases: rock, paper, scissor)
   var options = ["Schere", "Stein", "Papier"]
   if(decision == number)
   {
-    alert("Draw\nYou choosed: " + options[decision-1] + "\nOpponent choosed: " + options[number-1] + " " + number);
+    alert("Draw\nYou choosed: " + options[decision-1] + "\nOpponent choosed: " + options[number]);
   }
   else if (decision != number)
   {
@@ -19,20 +19,20 @@ function getanswer(decision) {
     {
       if(number == 1)
       {
-        alert("You lost!\nYou choosed: " + options[decision-1] + "\nOpponent choosed: " + options[number-1]  + " " + number);
+        alert("You lost!\nYou choosed: " + options[decision] + "\nOpponent choosed: " + options[number]);
       }
       else
       {
-        alert("You won!\nYou choosed: " + options[decision-1] + "\nOpponent choosed: " + options[number-1]  + " " + number);
+        alert("You won!\nYou choosed: " + options[decision] + "\nOpponent choosed: " + options[number-1]);
       }
     }
     else if(number < decision)
     {
-      alert("You won!\nYou choosed: " + options[decision-1] + "\nOpponent choosed: " + options[number-1]  + " " + number);
+      alert("You won!\nYou choosed: " + options[decision] + "\nOpponent choosed: " + options[number]);
     }
     else
     {
-      alert("You lost!\nYou choosed: " + options[decision-1] + "\nOpponent choosed: " + options[number-1]  + " " + number);
+      alert("You lost!\nYou choosed: " + options[decision] + "\nOpponent choosed: " + options[number]);
     }
   }
 }
