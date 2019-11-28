@@ -12,6 +12,7 @@ let yCor = [];
 let xFruit = 0;
 let yFruit = 0;
 let scoreElem;
+let frameElem;
 
 var start_frames = 15;
 var prev_mainscore = 0;
@@ -21,6 +22,11 @@ function setup() {
   scoreElem.position(130, 650);
   scoreElem.id = "score";
   scoreElem.style("color", "black");
+
+  frameElem = createDiv("Frames = 0");
+  frameElem.position(130, 670);
+  frameElem.id = "frame";
+  frameElem.style("color", "black");
 
   createCanvas(500, 500);
   frameRate(start_frames);
@@ -52,6 +58,7 @@ function speedup() {
     prev_mainscore = current_score;
     start_frames = start_frames + 1;
     frameRate(start_frames);
+    frameElem.html("Frames = " + (start_frames + 1));
   }
 }
 /*
