@@ -13,7 +13,7 @@ let xFruit = 0;
 let yFruit = 0;
 let scoreElem;
 
-let start_frames = 15;
+var start_frames = 15;
 var prev_mainscore = 0;
 
 function setup() {
