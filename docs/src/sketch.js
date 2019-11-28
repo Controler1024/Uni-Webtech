@@ -48,7 +48,7 @@ function draw() {
 function speedup() {
   var current_score = parseInt(scoreElem.html().substring(8));
   var score_diff = current_score - prev_mainscore;
-  if (score_diff > 1 && start_frames < 30) {
+  if (score_diff > 2 && start_frames < 60) {
     prev_mainscore = current_score;
     start_frames = start_frames + 1;
     frameRate(start_frames);
