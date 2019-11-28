@@ -33,7 +33,7 @@ function getanswer(decision) {
     }
     else
     {
-      ergebis += "You lost!\nYou choosed: " + options[decision] + "\nOpponent choosed: " + options[number];
+      ergebnis += "You lost!\nYou choosed: " + options[decision] + "\nOpponent choosed: " + options[number];
     }
   }
 document.getElementById("ergebnis").innerHTML = ergebnis;
