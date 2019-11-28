@@ -24,7 +24,7 @@ function getanswer(decision) {
       }
       else
       {
-        ergebnis += "You won!<br>You choosed: " + options[decision] + "<br>Opponent choosed: " + options[number-1];
+        ergebnis += "You won!<br>You choosed: " + options[decision] + "<br>Opponent choosed: " + options[number];
       }
     }
     if(decision == 1)
@@ -35,7 +35,7 @@ function getanswer(decision) {
       }
       else
       {
-        ergebnis += "You won!<br>You choosed: " + options[decision] + "<br>Opponent choosed: " + options[number-1];
+        ergebnis += "You won!<br>You choosed: " + options[decision] + "<br>Opponent choosed: " + options[number];
       }
     }
     if(decision == 0)
@@ -46,7 +46,7 @@ function getanswer(decision) {
       }
       else
       {
-        ergebnis += "You won!<br>You choosed: " + options[decision] + "<br>Opponent choosed: " + options[number-1];
+        ergebnis += "You won!<br>You choosed: " + options[decision] + "<br>Opponent choosed: " + options[number];
       }
     }
   }
