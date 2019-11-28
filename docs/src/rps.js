@@ -6,7 +6,7 @@ function getanswer(decision) {
   
   if(decision = number)
   {
-    alert("draw");
+    alert("draw " + decision + " " + number);
   }
   else if (decision != number)
   {
@@ -19,11 +19,11 @@ function getanswer(decision) {
     {
       if(number == 1)
       {
-        alert("You lost!");
+        alert("You lost! " + decision + " " + number);
       }
       else
       {
-        alert("You won!");
+        alert("You won! " + decision + " " + number);
       }
     }
   }
