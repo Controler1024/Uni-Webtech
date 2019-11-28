@@ -32,7 +32,7 @@ function getanswer(decision) {
     }
     else
     {
-      alert "You lost! " + decision + " " + number)
+      alert "You lost! " + decision + " " + number);
     }
   }
 }
