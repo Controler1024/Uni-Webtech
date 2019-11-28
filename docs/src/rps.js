@@ -2,7 +2,7 @@ document.getElementById("rps");
 
 function getanswer(decision) {
   
-  var number = Math.round(Math.random()*2).toString(); // generates a random number between 0 and 2 (for 3 cases: rock, paper, scissor)
+  var number = 1+ Math.round(Math.random()*2).toString(); // generates a random number between 0 and 2 (for 3 cases: rock, paper, scissor)
   var options = ["Schere", "Stein", "Papier"]
   if(decision == number)
   {
