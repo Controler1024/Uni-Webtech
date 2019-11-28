@@ -14,7 +14,7 @@ function setup() {
   createCanvas(600, 400);
   slider = createSlider(1, 25, 5);
   slidernumber = createDiv("Score = 0");
-  slidernumber.position(130, 500);
+  slidernumber.position(620, 380);
   slidernumber.id = "score";
   slidernumber.style("color", "black");
 }
@@ -22,7 +22,7 @@ function setup() {
 function draw() {
   background(0);
   translate(150, 200);
-  slidernumber.html("Slidercount = " + slider.value())
+  slidernumber.html("Slidercount = " + slider.value());
   let x = 0;
   let y = 0;
 
@@ -45,7 +45,6 @@ function draw() {
     //ellipse(x, y, 8);
   }
   wave.unshift(y);
-
 
   translate(200, 0);
   line(x - 200, y, 0, wave[0]);
