@@ -6,7 +6,7 @@ function getanswer(decision) {
   var options = ["Schere", "Stein", "Papier"]
   if(decision == number)
   {
-    alert("Draw\nYou choosed: " + options[decision-1] + "\nOpponent choosed: " + options[number]);
+    alert("Draw\nYou choosed: " + options[decision] + "\nOpponent choosed: " + options[number]);
   }
   else if (decision != number)
   {
