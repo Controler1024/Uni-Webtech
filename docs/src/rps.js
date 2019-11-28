@@ -26,5 +26,13 @@ function getanswer(decision) {
         alert("You won! " + decision + " " + number);
       }
     }
+    else if(number < decision)
+    {
+      alert("You won! " + decision + " " + number);
+    }
+    else
+    {
+      alert "You lost! " + decision + " " + number)
+    }
   }
 }
