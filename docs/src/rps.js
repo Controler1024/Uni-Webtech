@@ -16,7 +16,29 @@ function getanswer(decision) {
     2 Stone
     3 Paper
     */
-    if(decision == 3)
+    if(decision == 2)
+    {
+      if(number == 0)
+      {
+        ergebnis += "You lost!<br>You choosed: " + options[decision] + "<br>Opponent choosed: " + options[number];
+      }
+      else
+      {
+        ergebnis += "You won!<br>You choosed: " + options[decision] + "<br>Opponent choosed: " + options[number-1];
+      }
+    }
+    if(decision == 1)
+    {
+      if(number == 2)
+      {
+        ergebnis += "You lost!<br>You choosed: " + options[decision] + "<br>Opponent choosed: " + options[number];
+      }
+      else
+      {
+        ergebnis += "You won!<br>You choosed: " + options[decision] + "<br>Opponent choosed: " + options[number-1];
+      }
+    }
+    if(decision == 0)
     {
       if(number == 1)
       {
@@ -26,14 +48,6 @@ function getanswer(decision) {
       {
         ergebnis += "You won!<br>You choosed: " + options[decision] + "<br>Opponent choosed: " + options[number-1];
       }
-    }
-    else if(number < decision)
-    {
-      ergebnis += "You won!<br>You choosed: " + options[decision] + "<br>Opponent choosed: " + options[number];
-    }
-    else
-    {
-      ergebnis += "You lost!<br>You choosed: " + options[decision] + "<br>Opponent choosed: " + options[number];
     }
   }
 document.getElementById("ergebnis").innerHTML = ergebnis;
