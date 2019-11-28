@@ -6,7 +6,7 @@ function getanswer(decision) {
   var options = ["Schere", "Stein", "Papier"]
   if(decision == number)
   {
-    alert("Draw\nYou choosed: " + options[decision-1] + "\nOpponent choosed: " + options[number-1]);
+    alert("Draw\nYou choosed: " + options[decision-1] + "\nOpponent choosed: " + options[number-1] + " " + number);
   }
   else if (decision != number)
   {
@@ -19,20 +19,20 @@ function getanswer(decision) {
     {
       if(number == 1)
       {
-        alert("You lost!\nYou choosed: " + options[decision-1] + "\nOpponent choosed: " + options[number-1]);
+        alert("You lost!\nYou choosed: " + options[decision-1] + "\nOpponent choosed: " + options[number-1]  + " " + number);
       }
       else
       {
-        alert("You won!\nYou choosed: " + options[decision-1] + "\nOpponent choosed: " + options[number-1]);
+        alert("You won!\nYou choosed: " + options[decision-1] + "\nOpponent choosed: " + options[number-1]  + " " + number);
       }
     }
     else if(number < decision)
     {
-      alert("You won!\nYou choosed: " + options[decision-1] + "\nOpponent choosed: " + options[number-1]);
+      alert("You won!\nYou choosed: " + options[decision-1] + "\nOpponent choosed: " + options[number-1]  + " " + number);
     }
     else
     {
-      alert("You lost!\nYou choosed: " + options[decision-1] + "\nOpponent choosed: " + options[number-1]);
+      alert("You lost!\nYou choosed: " + options[decision-1] + "\nOpponent choosed: " + options[number-1]  + " " + number);
     }
   }
 }
